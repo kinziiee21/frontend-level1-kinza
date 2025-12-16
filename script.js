@@ -1,10 +1,3 @@
-console.log("Frontend Internship Day 1 Loaded Successfully");
-document.querySelectorAll(".primary-btn").forEach(button => {
-    button.addEventListener("click", () => {
-        if (button.disabled) return;
-        alert("Primary button clicked!");
-    });
-});
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
@@ -20,5 +13,3 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         document.body.style.overflow = "auto";
     });
 });
-
-
