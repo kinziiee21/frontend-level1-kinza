@@ -184,5 +184,42 @@ main {
     flex-grow: 1;
     margin-bottom: 15px;
 }
+/* ======================
+   NOTIFICATION BANNER (Day 7)
+====================== */
+.notification {
+    position: fixed;
+    top: 70px; /* below navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 600px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Success */
+.notification.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Error */
+.notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
 
