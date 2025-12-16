@@ -254,5 +254,45 @@ main {
     margin-bottom: 10px;
 }
 
+/* ======================
+   FOOTER (Day 9)
+====================== */
+.footer {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
 
 
