@@ -17,3 +17,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+const searchForm = document.getElementById("searchForm");
+const searchInput = document.getElementById("searchInput");
+
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (searchInput.value.trim() === "") {
+        alert("Please enter something to search");
+        return;
+    }
+
+    alert("You searched for: " + searchInput.value);
+    searchInput.value = "";
+});
