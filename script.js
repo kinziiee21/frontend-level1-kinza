@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     /* ======================
-       DAY 4 - MOBILE NAV
+       DAY 4 - MOBILE NAVBAR
     ====================== */
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ======================
-       DAY 5 - SEARCH FORM
+       DAY 5 - SEARCH BAR
     ====================== */
     const searchForm = document.getElementById("searchForm");
     const searchInput = document.getElementById("searchInput");
@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ======================
        DAY 7 - NOTIFICATION
     ====================== */
-    const closeNotification = document.getElementById("closeNotification");
     const notification = document.getElementById("notification");
+    const closeNotification = document.getElementById("closeNotification");
 
-    if (closeNotification && notification) {
+    if (notification && closeNotification) {
         closeNotification.addEventListener("click", () => {
             notification.style.display = "none";
         });
@@ -88,21 +88,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-});
-const goTopBtn = document.getElementById("goTopBtn");
+    /* ======================
+       DAY 10 - GO TO TOP
+    ====================== */
+    const goTopBtn = document.getElementById("goTopBtn");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        goTopBtn.style.display = "block";
-    } else {
-        goTopBtn.style.display = "none";
+    if (goTopBtn) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                goTopBtn.style.display = "block";
+            } else {
+                goTopBtn.style.display = "none";
+            }
+        });
+
+        goTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     }
-});
 
-goTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
 });
-
