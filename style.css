@@ -1,3 +1,9 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* ======================
    GLOBAL STYLES (Day 1)
 ====================== */
@@ -293,6 +299,7 @@ main {
         gap: 20px;
     }
 }
+
 
 
 
