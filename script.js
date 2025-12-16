@@ -32,3 +32,12 @@ searchForm.addEventListener("submit", (e) => {
     alert("You searched for: " + searchInput.value);
     searchInput.value = "";
 });
+
+const notification = document.getElementById("notification");
+const closeNotification = document.getElementById("closeNotification");
+
+if (closeNotification) {
+    closeNotification.addEventListener("click", () => {
+        notification.style.display = "none";
+    });
+}
