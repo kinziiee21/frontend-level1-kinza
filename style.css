@@ -29,38 +29,12 @@ h1 {
     cursor: not-allowed;
 }
 
-.navbar {
-    height: 70px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.nav-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.nav-links a.active {
-    color: #007bff;
-    font-weight: bold;
-}
 .hamburger {
     display: none;
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -74,7 +48,7 @@ h1 {
         background-color: white;
         display: none;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         padding: 20px 0;
     }
 
@@ -86,10 +60,8 @@ h1 {
         display: none;
     }
 }
-.hamburger {
-    display: block !important;
-    color: red;
-}
+
+
 
 
 
