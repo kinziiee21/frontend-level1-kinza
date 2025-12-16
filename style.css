@@ -1,14 +1,20 @@
-body {
+/* ======================
+   GLOBAL STYLES (Day 1)
+====================== */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
-h1 {
-    color: #333;
-}
-
+/* ======================
+   PRIMARY BUTTON (Day 2)
+====================== */
 .primary-btn {
     background-color: #007bff;
     color: white;
@@ -17,11 +23,15 @@ h1 {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 .primary-btn:hover {
     background-color: #0056b3;
+}
+
+.primary-btn:active {
+    transform: scale(0.97);
 }
 
 .primary-btn:disabled {
@@ -29,12 +39,60 @@ h1 {
     cursor: not-allowed;
 }
 
+/* ======================
+   NAVBAR DESKTOP (Day 3)
+====================== */
+.navbar {
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-links a.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* ======================
+   HAMBURGER (Day 4)
+====================== */
 .hamburger {
     display: none;
     font-size: 26px;
     cursor: pointer;
 }
 
+/* ======================
+   MAIN CONTENT
+====================== */
+main {
+    padding: 20px;
+}
+
+/* ======================
+   MOBILE NAVBAR (Day 4)
+====================== */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -50,18 +108,19 @@ h1 {
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
+        border-top: 1px solid #ddd;
     }
 
     .nav-links.show {
         display: flex;
     }
 
+    .nav-links a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
     .desktop-only {
         display: none;
     }
 }
-
-
-
-
-
