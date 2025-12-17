@@ -321,3 +321,50 @@ main {
     background-color: #0056b3;
 }
 
+/* ================================
+   WEEK 3 - DAY 1 (PAGE STRUCTURE)
+   Purpose: layout visibility only
+   No final design yet
+================================ */
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+.features {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.feature-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Content Section */
+.content {
+    padding: 40px 20px;
+    background-color: #fafafa;
+}
+
